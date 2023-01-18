@@ -1,0 +1,6 @@
+.idea
+venv
+*.pytest_cache
+browser_store
+tmp
+*__pycache__

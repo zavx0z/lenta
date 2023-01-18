@@ -1,0 +1,9 @@
+selenium
+undetected-chromedriver
+pandas
+pyarrow
+pytest
+allure-pytest
+jinja2
+pytest-env
+parse-schema==0.0.5
