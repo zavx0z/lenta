@@ -1,9 +1,10 @@
-selenium
-undetected-chromedriver
-pandas
-pyarrow
-pytest
+pandas~=1.5.3
+pyarrow~=11.0.0
+pytest~=7.2.1
 allure-pytest
 jinja2
 pytest-env
-parse-schema==0.0.5
+parse-schema
+requests~=2.28.2
+python-dotenv~=0.21.1
+# chrome-boss

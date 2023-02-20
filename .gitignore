@@ -3,4 +3,4 @@ venv
 *.pytest_cache
 browser_store
 tmp
-*__pycache__
+*/__pycache__

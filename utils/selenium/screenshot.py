@@ -1,10 +1,3 @@
-import base64
-
-
-def png_base64_string_full_page(wd):
-    return wd.execute_cdp_cmd("Page.captureScreenshot", {"captureBeyondViewport": True}).get('data')
-
-
 def png_base64_bytes_element_full(element):
     driver = element.parent
     required_width = driver.execute_script('return document.body.parentNode.scrollWidth')
