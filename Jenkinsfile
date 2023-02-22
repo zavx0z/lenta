@@ -12,7 +12,7 @@ pipeline {
     }
     environment {
         PYTEST_DEBUG=1
-        STORE_DIR=./store
+        STORE_DIR='./store'
         CHROME_HOST='192.168.88.44'
         CHROME_PORT=4444
     }
