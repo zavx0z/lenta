@@ -29,7 +29,7 @@ pipeline {
         stage('Тест пагинации') {
             steps {
                 withPythonEnv('python') {
-                    sh "pytest test_paginator/test_paginator.py --url=${params.url} --schema=${params.schema} --result=${params.result} --alluredir=${params.report}"
+                    sh "python -m pytest test_paginator/test_paginator.py --url=${params.url} --schema=${params.schema} --result=${params.result} --alluredir=${params.report} --no-header --no-summary -q in /home/zavx0z/projects/lenta --log-cli-level=INFO"
                 }
             }
         }
