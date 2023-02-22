@@ -1,0 +1,6 @@
+[submodule "test-paginator"]
+	path = test-paginator
+	url = git@github.com:zavx0z/test-paginator.git
+[submodule "test_paginator"]
+	path = test_paginator
+	url = git@github.com:zavx0z/test_paginator.git
