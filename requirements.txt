@@ -7,4 +7,4 @@ pytest-env
 parse-schema
 requests~=2.28.2
 python-dotenv~=0.21.1
-# chrome-boss
+chrome-boss
