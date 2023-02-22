@@ -28,8 +28,10 @@ pipeline {
         }
         stage('Тест пагинации') {
             steps {
-                withPythonEnv('python') {
-                    sh "pytest test_paginator/test_paginator.py::TestPagination  --url='${params.url}'` --schema=${params.schema} --result=${params.result} --alluredir=${params.report} --no-header --no-summary -q --log-cli-level=INFO"
+                dir('test_pagination') {
+                    withPythonEnv('python') {
+                        sh "pytest test_paginator.py --url='${params.url}' --schema=${params.schema} --result=${params.result} --alluredir=${params.report} --no-header --no-summary -q --log-cli-level=INFO"
+                    }
                 }
             }
         }
